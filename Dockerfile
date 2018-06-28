@@ -5,6 +5,8 @@ RUN mkdir /app
 WORKDIR /app
 
 # install utilities. I currently like yarn
-RUN npm install -g yarn nodemon tsc
+RUN npm install -g yarn nodemon typescript
 # install dependencies
+ADD ./package.json .
+ADD ./yarn.lock .
 RUN yarn
