@@ -1,4 +1,4 @@
-#Docker-nodemon
+# Docker-nodemon
 
 Tiny docker-compose setup to build and run a small typescript project
 
