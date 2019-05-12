@@ -1,4 +1,17 @@
 {
   "name": "DockerNodemon",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "scripts": {
+    "serve": "docker-compose kill && docker-compose rm -vsf && docker-compose build && docker-compose up"
+  },
+  "dependencies": {
+    "@types/mocha": "^5.2.6"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/source-map-support": "^0.5.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "source-map-support": "^0.5.12"
+  }
 }
